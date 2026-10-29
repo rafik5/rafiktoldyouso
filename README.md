@@ -1,2 +1,2 @@
 # rafiktoldyouso
-Rafik told you so: the Bitcoin regret calculato
+Rafik told you so: the Bitcoin regret calculator
