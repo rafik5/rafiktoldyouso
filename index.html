@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rafik Told You So</title>
+  <meta name="description" content="Find out how rich you would be if you had listened to Rafik about Bitcoin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <img class="sprite coin" src="assets/coin.svg" alt="Pixel art Bitcoin coin" width="96" height="96">
+    <h1>RAFIK <span>TOLD</span> YOU SO</h1>
+    <p class="tagline">&gt; He mentioned Bitcoin. You nodded politely. Let's see what that cost you.</p>
+    <p class="stars" aria-hidden="true">
+      <img class="sprite" src="assets/star.svg" alt="" width="27" height="27">
+      <img class="sprite" src="assets/star.svg" alt="" width="18" height="18">
+      <img class="sprite" src="assets/star.svg" alt="" width="27" height="27">
+    </p>
+  </header>
+
+  <main>
+    <!-- SECTION 1: the Bitcoin "what if" calculator -->
+    <section id="bitcoin" class="window">
+      <div class="titlebar"><span>REGRET.EXE</span><span class="btns" aria-hidden="true"><i>_</i><i>□</i><i>x</i></span></div>
+      <div class="content">
+        <div class="field">
+          <label for="year">1. WHEN DID RAFIK TELL YOU ABOUT BITCOIN?</label>
+          <select id="year"></select>
+        </div>
+
+        <div class="field">
+          <label for="amount">2. HOW MUCH WOULD YOU HAVE INVESTED?</label>
+          <select id="amount"></select>
+        </div>
+
+        <button id="refresh" type="button">&gt;&gt; REFRESH MY REGRET &lt;&lt;</button>
+
+        <div class="field result" aria-live="polite">
+          <span class="label">3. RIGHT NOW IT WOULD BE WORTH:</span>
+          <div id="result" class="big">Pick a year and an amount, then hit the button.</div>
+          <div id="details" class="small"></div>
+        </div>
+
+        <p class="live">LIVE BTC PRICE: <strong id="live-price">loading…</strong></p>
+        <p class="fine">Buy price = the highest BTC price of the chosen year (USD). Not financial advice, just hindsight.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: customer reviews (static, you edit the text below) -->
+    <section id="reviews" class="window">
+      <div class="titlebar"><span>REVIEWS.TXT</span><span class="btns" aria-hidden="true"><i>_</i><i>□</i><i>x</i></span></div>
+      <div class="content">
+        <h2><img class="sprite" src="assets/floppy.svg" alt="" width="28" height="28"> WHAT PEOPLE SAY</h2>
+        <p class="fine">Totally fictional sample stories, for entertainment only. Swap them for real ones in index.html.</p>
+
+        <div class="reviews">
+          <blockquote>
+            <p>“I lost the private key to my wallet in 2019 after a very bad hard drive crash. Eight bitcoins, gone, or so I thought. I sent Rafik a desperate message at midnight. Three weeks later he handed me back access, and the amount was nicer than anything I have ever seen on a bank statement. I cried in a supermarket parking lot. Then I bought him a very large coffee.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Marc L., Lyon <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“I told Rafik that Bitcoin was a scam for the pyramid scheme crowd. Years later I am the one texting him at 7 a.m. asking what he is doing today. I now copy every single move he makes. My husband says I have a new husband. My husband is right, and he is also buying more.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Daniela P., Munich <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“My late uncle left me an old laptop with a note saying 'there might be something on it'. There was. Rafik found the wallet file, recovered the key, and the 'something' paid off my mortgage. I have framed the note. The laptop now sits on my mantelpiece like a holy relic.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Tom W., Manchester <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote class="regret">
+            <p>“In 2013 Rafik explained Bitcoin to me over lunch. I had the money. I had the app open. My finger was literally on the button. Then I said 'let me think about it'. I am still thinking about it. Every year, around March, I open that calculator and stare at the screen. The sandwich was good though.”</p>
+            <footer><span class="tag">[REGRET]</span> Julien B., Paris <span class="rating">★☆☆☆☆</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“I wrote my seed phrase on a restaurant receipt and then, naturally, I washed those trousers. Rafik did something I still do not understand with the pieces I remembered, and the wallet opened. Twelve words, a lot of patience, and a very good sum at the end. Never again will I write anything down on a receipt.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Aisha K., Dubai <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“I laughed at Rafik for two straight years. Then I stopped laughing and started buying. Now I do not take a single decision without asking myself what Rafik would do. My accountant is worried. My bank account is not.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Peter H., Vienna <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“I bought a pizza with a tiny fraction of a coin once and I was proud of it. Rafik gently showed me the price today of that pizza. It is now the most expensive pizza in human history. I still eat pizza, but I do it in silence and with shame.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Lena S., Berlin <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote class="regret">
+            <p>“In 2017 I put 50 dollars on an exchange and stood there with my mouse over the buy button for twenty minutes. A voice in my head said it was too risky. I closed the tab and went to buy sneakers. Those sneakers are gone. The coins I did not buy would have bought me a small apartment. Rafik did tell me so, three times.”</p>
+            <footer><span class="tag">[REGRET]</span> Karim T., Casablanca <span class="rating">★☆☆☆☆</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“I locked myself out of an old exchange account, with a password I had chosen at 2 a.m. during a bad week. Everyone said it was impossible to get back. Rafik said 'give me a day'. He needed two, to be fair. The balance that came back made me sit down on the kitchen floor.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Sophie M., Brussels <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“My brother-in-law refused to believe in Bitcoin for ten years. Last Christmas he asked Rafik, in front of the entire family, how to buy some. The silence at the table was beautiful. I passed the potatoes and said nothing, which was the hardest thing I have ever done.”</p>
+            <footer><span class="tag">[SUCCESS]</span> George A., Athens <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“I told my wife I was going to put 100 dollars into Bitcoin following Rafik's advice. She said I was an idiot. Today she wears the watch I bought with it and asks me for 'one more coin, just a little one'. I kindly refer her to Rafik. He is more patient than I am.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Nina V., Amsterdam <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote class="regret">
+            <p>“I really believed him. I told everybody at the office about it. Then the price dropped 30 percent in one week, I panicked, and I sold everything at the bottom. I was extremely smart for about four hours. Rafik called me and said only one sentence: 'I told you so.' I deserved it.”</p>
+            <footer><span class="tag">[REGRET]</span> Oliver D., London <span class="rating">★☆☆☆☆</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“A very old hard drive in my garage had been sitting under a box of Christmas decorations for years. Rafik asked me to send it, found the wallet file in the dust, and rebuilt the private key. The sum was beyond anything I would have dared to dream. The Christmas decorations are now in a much nicer box.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Fatima Z., Tunis <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“A dinner with Rafik changed my life. He did not sell me anything, he just told me to buy a little every month, to never panic and to stop checking the price every five minutes. I did the first two. The third one is still a work in progress, but my future self is sending thank-you cards.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Lucas R., Lisbon <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“I named my dog Satoshi in 2015 as a joke. Rafik told me the dog's name would end up being worth more than the dog itself. He was right on both counts. Satoshi is spoiled beyond belief, eats premium food, and sleeps on a heated bed. He knows exactly what he has done for this family.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Elena G., Madrid <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote class="regret">
+            <p>“My cousin begged me to follow Rafik early on. I smiled and said I prefer 'real' investments, like a second car that loses half its value in three years. I drive that car every day. I look at the price every night. Some regrets are expensive; this one is just personal.”</p>
+            <footer><span class="tag">[REGRET]</span> Mehdi A., Algiers <span class="rating">★☆☆☆☆</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“I am a professor of economics and I explained for years why this could never work. Rafik did not argue, he just sent me one chart a month. After a year of charts, I resigned from my position as skeptic. I now give lectures about 'educated humility', and the first slide shows his photo.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Dr. Hans K., Zurich <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“I spent four months looking for a password I had stored in a notebook that my cat had apparently decided to destroy. Rafik helped me rebuild the key from fragments and a few old emails. The cat is innocent, the sum was generous, and the notebook is now kept in a safe. The cat is not allowed near the safe.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Chloe F., Montreal <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote>
+            <p>“Whatever Rafik buys, I buy a smaller amount the very next day. I call it 'the Rafik effect'. My wife calls it stalking. My portfolio calls it love. I have not missed a single move since I started, and he still has no idea how many of us are behind him.”</p>
+            <footer><span class="tag">[SUCCESS]</span> Ivan P., Sofia <span class="rating">★★★★★</span></footer>
+          </blockquote>
+          <blockquote class="regret">
+            <p>“I almost invested my whole bonus in 2020. I even wrote the amount on a piece of paper and stuck it on my fridge. Then my brother-in-law told me it was gambling and I listened to him instead of Rafik. The piece of paper is still on the fridge. It looks at me every morning while I make my coffee.”</p>
+            <footer><span class="tag">[REGRET]</span> Sara N., Rome <span class="rating">★☆☆☆☆</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img class="sprite" src="assets/heart.svg" alt="" width="27" height="24">
+    <p>© <span id="yr"></span> RAFIKTOLDYOUSO.COM &nbsp;|&nbsp; INSERT COIN TO CONTINUE</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
